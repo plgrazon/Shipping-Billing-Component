@@ -2,7 +2,11 @@ import React from 'react';
 
 const ReturnPolicyTable = () => (
   <div>
-    <table></table>
+    <table>
+      <th>
+        <tr></tr>
+      </th>
+    </table>
   </div>
 );
 
