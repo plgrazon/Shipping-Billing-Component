@@ -3,8 +3,8 @@ import axios from 'axios';
 
 import { seeds } from '../../db/sql/seed';
 
-import ShippingTable from './tables/ShippingTable';
-import ReturnPolicyTable from './tables/ReturnPolicyTable';
+import ShippingTable from './tables/ShippingTable.jsx';
+import ReturnPolicyTable from './tables/ReturnPolicyTable.jsx';
 
 class Shipping extends React.Component {
   constructor() {

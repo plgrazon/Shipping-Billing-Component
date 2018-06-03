@@ -1,5 +1,5 @@
 import React from 'react';
-import Shipping from './Shipping';
+import ShippingTable from './Shipping.jsx';
 
 class App extends React.Component {
   constructor() {
@@ -11,7 +11,7 @@ class App extends React.Component {
   render() {
     return(
       <div>
-        <Shipping />
+        <ShippingTable />
       </div>
     )
   }
