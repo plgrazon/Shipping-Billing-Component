@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-const db = new Sequelize('shipping_billing', 'biosync', '', {
+const db = new Sequelize('shipping_billing', 'biosync', 'paololuis8593', {
   host: 'localhost',
   dialect: 'postgres'
 });

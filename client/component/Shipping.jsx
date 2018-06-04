@@ -111,7 +111,6 @@ class Shipping extends React.Component {
 
     return(
       <div>
-        <h1>Shipping and Billing</h1>
         <form
           onSubmit={this.handleSubmit}
         >
