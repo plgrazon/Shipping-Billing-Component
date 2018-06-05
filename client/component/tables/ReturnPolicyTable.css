@@ -1,14 +1,39 @@
 :local(.return) {
-  border: 1px solid black;
+  border-collapse: collapse;
   font-size: 18px;
   font-family: helvetica, arial, sans-serif;
-  width: 100%;
+  width: 98%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+:local(.return-header) {
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  background-color: #e8eaed;
+}
+
+:local(.return-outside-border) {
+  border: 1px solid black;
+}
+
+:local(.return-lower-border) {
+  border-bottom: 1px solid black;
+}
+
+:local(.return-policy-header) {
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  background-color: #e8eaed;
 }
 
 th {
   height: 40px;
+  text-align: left;
 }
 
 td {
   height: 30px;
+  text-align: left;
 }

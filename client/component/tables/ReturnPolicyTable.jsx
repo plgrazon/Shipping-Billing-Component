@@ -3,15 +3,15 @@ import React from 'react';
 import styles from './ReturnPolicyTable.css';
 
 const ReturnPolicyTable = () => (
-  <div>
+  <div className={styles['return-outside-border']}>
+    <h3>Return Policy</h3>
     <table className={styles.return}>
-      <h3>Return Policy</h3>
-      <tr>
+      <tr className={styles['return-header']}>
         <th>After receiving item, contact seller within</th>
         <th>Refund will be given as</th>
         <th>Return shipping</th>
       </tr>
-      <tr>
+      <tr className={styles['return-lower-border']}>
         <td>30 days</td>
         <td>Money back</td>
         <td>Seller pays for return shipping</td>
@@ -19,12 +19,11 @@ const ReturnPolicyTable = () => (
       <tr>
         <td colspan="3">
           <p>
-              Refer to <a href="https://www.ebay.com/help/buying/returns-refunds/return-item-refund?id=4041#section3">eBay Return policy</a>
-            for more details. You are covered by the eBay Money Back Guarantee if you receive an item that is not as described in the listing.
+              Refer to <a href="https://www.ebay.com/help/buying/returns-refunds/return-item-refund?id=4041#section3">eBay Return policy</a> for more details. You are covered by the <a href="https://www.ebay.com/help/policies/ebay-money-back-guarantee-policy/ebay-money-back-guarantee-policy?id=4210">eBay Money Back Guarantee</a> if you receive an item that is not as described in the listing.
           </p>
         </td>
       </tr>
-      <tr>
+      <tr className={styles['return-policy-header']}>
         <th colspan="3">Return policy details</th>
       </tr>
       <tr>

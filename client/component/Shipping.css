@@ -1,21 +1,101 @@
-label {
-  font-size: 12px;
+/**********
+Forms:
+**********/
+:local(.form-padding) {
+  padding-left: 13px;
+}
+
+:local(label) {
+  font-size: 18px;
   font-family: helvetica, arial, sans-serif;
 }
 
-select {
-  font-size: 14px;
+:local(select) {
+  font-size: 18px;
   font-family: helvetica, arial, sans-serif;
 }
 
-input {
-  font-size: 14px;
+:local(input) {
+  font-size: 18px;
   font-family: helvetica, arial, sans-serif;
 }
 
-button {
+:local(button) {
   border-radius: 4px;
   color: blue;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
+}
+
+/**********
+Text/Paragraphs:
+**********/
+
+:local(.shipping-conditions) {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 18px;
+  text-align: left;
+  padding-bottom: 15px;
+  padding-left: 13px;
+}
+
+:local(.shipping-delivery-conditions) {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 13px;
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 13px;
+}
+
+:local(.shipping-conditions > div) {
+  padding-bottom: 10px;
+}
+
+/**********
+Tables:
+**********/
+
+:local(.shipping-outside-border) {
+  border: 1px solid black;
+  border-collapse: collapse;
+  overflow: hidden;
+  width: 100%;
+}
+
+:local(.shipping) {
+  border-collapse: collapse;
+  border-bottom: 1px solid black;
+  border-spacing: hidden;
+  font-size: 18px;
+  font-family: helvetica, arial, sans-serif;
+  width: 98%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+}
+
+:local(.shipping-header) {
+  border-bottom: 1px solid black;
+  background-color: #e8eaed;
+}
+
+:local(h3) {
+  font-size: 20px;
+  font-family: helvetica, arial, sans-serif;
+  padding: 10px;
+  padding-left: 15px;
+}
+
+:local(th) {
+  padding: 10px;
+  height: 40px;
+  text-align: left;
+}
+
+:local(td) {
+  padding: 10px;
+  height: 30px;
+  text-align: left;
 }
