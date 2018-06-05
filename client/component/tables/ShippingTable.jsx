@@ -1,9 +1,11 @@
 import React from 'react';
 
+import styles from './ShippingTable.css';
+
 const ShippingTable = ({basicRate, expeditedRate, oneDayRate, defaultCountry}) => (
   <div>
-    <h3>Shipping and Billing</h3>
-    <table>
+    <table className={styles.shipping}>
+      <h3>Shipping and Billing</h3>
       <tr>
         <th>Shipping and handling</th>
         <th>Each additional item</th>

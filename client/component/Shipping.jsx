@@ -3,8 +3,11 @@ import axios from 'axios';
 
 import { seeds } from '../../db/sql/seed';
 
+import styles from './Shipping.css';
+
 import ShippingTable from './tables/ShippingTable.jsx';
 import ReturnPolicyTable from './tables/ReturnPolicyTable.jsx';
+import PaymentDetails from './tables/PaymentDetailsTable.jsx';
 
 class Shipping extends React.Component {
   constructor() {
@@ -114,7 +117,8 @@ class Shipping extends React.Component {
         <form
           onSubmit={this.handleSubmit}
         >
-          {"QTY: "}<input
+          <label>{ "Quantity: "}</label>
+          <input
             onChange={this.handleChangeInQty}
             type="number" min="1"
           ></input>{" "}
@@ -144,6 +148,9 @@ class Shipping extends React.Component {
         </div>
         <div>
           <ReturnPolicyTable />
+        </div>
+        <div>
+          <PaymentDetails />
         </div>
       </div>
     )
