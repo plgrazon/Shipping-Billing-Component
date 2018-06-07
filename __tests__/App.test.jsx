@@ -4,7 +4,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import { configure } from 'enzyme';
 import { createSerializer } from 'enzyme-to-json';
 
-import App from './App';
+import App from '../client/component/App';
 
 expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));
 
