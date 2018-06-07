@@ -16,7 +16,7 @@ module.exports = {
         exclude: [/node_modules/],
         use: [{
           loader: 'babel-loader',
-          options: { presets: ['es2015', 'react'] }
+          options: { presets: ['env', 'react'] }
         }],
       },
       {
@@ -26,6 +26,11 @@ module.exports = {
       {
         test: /\.(png|svg|jpe?g|gif)$/,
         use: ['file-loader']
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: [/node_modules/],
+        loader: 'babel'
       }
     ]
   }
