@@ -17,17 +17,17 @@ const ReturnPolicyTable = () => (
         <td>Seller pays for return shipping</td>
       </tr>
       <tr>
-        <td colspan="3">
+        <td colSpan="3">
           <p>
               Refer to <a href="https://www.ebay.com/help/buying/returns-refunds/return-item-refund?id=4041#section3">eBay Return policy</a> for more details. You are covered by the <a href="https://www.ebay.com/help/policies/ebay-money-back-guarantee-policy/ebay-money-back-guarantee-policy?id=4210">eBay Money Back Guarantee</a> if you receive an item that is not as described in the listing.
           </p>
         </td>
       </tr>
       <tr className={styles['return-policy-header']}>
-        <th colspan="3">Return policy details</th>
+        <th colSpan="3">Return policy details</th>
       </tr>
       <tr>
-        <td colspan="3">
+        <td colSpan="3">
           All buyers remorse returns or returns for refused delivery will be subject to 20% restocking fee.
           Any items that are returned not complete or with damages pieces will not be refunded.
         </td>
