@@ -31,12 +31,14 @@
     "jest": "^23.1.0",
     "nodemon": "^1.17.5",
     "react-test-renderer": "^16.4.0",
+    "sinon": "^5.1.0",
     "style-loader": "^0.21.0",
     "webpack": "^4.11.1",
     "webpack-cli": "^2.1.5"
   },
   "scripts": {
     "test": "jest",
+    "test:watch": "jest --watchAll",
     "start": "nodemon server",
     "build": "webpack -w",
     "build:db": "nodemon db/config"
@@ -46,8 +48,7 @@
   "license": "ISC",
   "jest": {
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-        "<rootDir>/__mocks__/fileMock.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     }
   }
