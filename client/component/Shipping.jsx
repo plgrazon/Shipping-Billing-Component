@@ -130,10 +130,10 @@ class Shipping extends React.Component {
               <select
                 value={this.state.selectedCountry || this.state.defaultCountry}
                 onChange={this.handleChange}
-                >
+              >
                 {
-                  this.state.countries.map(country => (
-                    <option>{country}</option>
+                  this.state.countries.map((country, i) => (
+                    <option key={i}>{country}</option>
                   ))
                 }
               </select>
@@ -143,30 +143,34 @@ class Shipping extends React.Component {
           <br></br>
           <div>
             <table className={styles.shipping}>
-              <tr className={styles['shipping-header']}>
-                <th>Shipping and handling</th>
-                <th>Each additional item</th>
-                <th>To</th>
-                <th>Service</th>
-              </tr>
-              <tr>
-                <td>{`US $${this.state.basicRate}.00`}</td>
-                <td>free</td>
-                <td>{this.state.defaultCountry}</td>
-                <td>Standard Shipping</td>
-              </tr>
-              <tr>
-                <td>{`US $${this.state.expeditedRate}.00`}</td>
-                <td>3</td>
-                <td>{this.state.defaultCountry}</td>
-                <td>Expedited Shipping</td>
-              </tr>
-              <tr>
-                <td>{`US $${this.state.oneDayRate}.00`}</td>
-                <td>5</td>
-                <td>{this.state.defaultCountry}</td>
-                <td>{`One-day Shipping`}</td>
-              </tr>
+              <thead>
+                <tr className={styles['shipping-header']}>
+                  <th>Shipping and handling</th>
+                  <th>Each additional item</th>
+                  <th>To</th>
+                  <th>Service</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{`US $${this.state.basicRate}.00`}</td>
+                  <td>free</td>
+                  <td>{this.state.defaultCountry}</td>
+                  <td>Standard Shipping</td>
+                </tr>
+                <tr>
+                  <td>{`US $${this.state.expeditedRate}.00`}</td>
+                  <td>3</td>
+                  <td>{this.state.defaultCountry}</td>
+                  <td>Expedited Shipping</td>
+                </tr>
+                <tr>
+                  <td>{`US $${this.state.oneDayRate}.00`}</td>
+                  <td>5</td>
+                  <td>{this.state.defaultCountry}</td>
+                  <td>{`One-day Shipping`}</td>
+                </tr>
+              </tbody>
             </table>
           </div>
           <div className={styles['shipping-delivery-conditions']}>
