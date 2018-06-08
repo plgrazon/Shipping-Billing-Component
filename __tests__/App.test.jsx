@@ -11,20 +11,22 @@ expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));
 
 configure({ adapter: new Adapter() });
 
-it('App should be defined', () => {
-  const wrapper = shallow(<App />);
+describe('Component: App', () => {
+  it('App should be defined', () => {
+    const wrapper = shallow(<App />);
 
-  expect(wrapper).toBeDefined();
-});
+    expect(wrapper).toBeDefined();
+  });
 
-it('App should render correctly', () => {
-  const wrapper = shallow(<App />);
+  it('App should render correctly', () => {
+    const wrapper = shallow(<App />);
 
-  expect(wrapper).toMatchSnapshot();
-});
+    expect(wrapper).toMatchSnapshot();
+  });
 
-it('App should have the shipping component', () => {
-  const wrapper = shallow(<App />);
+  it('App should have the shipping component', () => {
+    const wrapper = shallow(<App />);
 
-  expect(wrapper.contains(<Shipping />)).toEqual(true);
+    expect(wrapper.contains(<Shipping />)).toEqual(true);
+  });
 });

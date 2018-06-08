@@ -68,33 +68,40 @@ describe('Component: App', () => {
   });
 
 
-  it('Shipping should register a click', async() => {
-    const onSubmitForm = jest.fn();
+  it('Shipping should register a click', () => {
+    // const onSubmitForm = jest.fn();
     const preventDefault = jest.fn();
     const wrapper = mount(<Shipping />);
     const instance = wrapper.instance();
 
-    expect.assertions(1);
-
-    wrapper
-      .find('input')
-      .simulate('change', {
-        target: {
-          value: 'India'
-        }
-      });
+    // wrapper.setState({selectedCountry: 'India'});
+    // const input = wrapper.find('input');
+    // const form = wrapper.find('form');
+    // input.simulate('change', {target: {value: 'India'}});
+    // form.simulate('submit', onSubmitForm);
+    // wrapper
+    //   .find('input')
+    //   .simulate('change', {
+    //     target: {
+    //       value: 'India'
+    //     }
+    //   });
 
     wrapper
       .find('form')
-      .simulate('submit', {preventDefault});
+      .simulate('submit', { preventDefault });
 
-    // expect(preventDefault).toBeCalled();
-    expect(onSubmitForm).toBeCalledWith('India');
+    expect(preventDefault).toBeCalled();
+    // expect(preventDefault).toBeCalledWith('India');
+  });
+
+  it('Shipping should register submit', () => {
+    const wrapper = mount(<Shipping />);
+
+    wrapper.find('input').simulate('change', {
+      target: {value: 'India'}
+    });
+
+    expect(wrapper).toMatchSnapshot();
   });
 });
-
-// test('User fetched name should be Leanne Graham', async() => {
-//   expect.assertions(1);
-//   const data = await functions.fetchUser();
-//   expect(data.name).toEqual('Leanne Graham');
-// });
