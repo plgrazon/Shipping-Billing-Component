@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: PaymentDetailsTable PaymentDetailsTable should render correctly 1`] = `
+<div>
+  <h3>
+    Payment details
+  </h3>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Payment Method
+        </th>
+        <th>
+          Preferred / Accepted
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <img
+            src="test-file-stub"
+          />
+        </td>
+        <td>
+          PayPal Preferred
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

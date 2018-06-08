@@ -21,13 +21,7 @@ configure({ adapter: new Adapter() });
 ////////////////////////////////////////////////////////////////////////////////
 
 describe('Component: App', () => {
-  const wrapper = shallow(<Shipping />)
-  const countries = ['Philippines', 'Japan', 'United States of America'];
-
-  beforeEach(() => {
-    wrapper.setState({countries: countries});
-    wrapper.find('form').simulate('submit', { preventDefault: jest.fn() });
-  });
+  const wrapper = shallow(<Shipping />);
 
   it('Shipping should be defined', () => {
     expect(wrapper).toBeDefined();
@@ -42,6 +36,8 @@ describe('Component: App', () => {
   });
 
   it('Shipping should render options', () => {
+    const countries = ['Philippines', 'Japan', 'United States of America'];
+    wrapper.setState({ countries: countries });
     const instance = wrapper.instance();
 
     expect(instance.state.countries.length).toEqual(3);
@@ -67,6 +63,10 @@ describe('Component: App', () => {
     expect(wrapper.find('form').length).toBe(1);
   });
 
+  it('Shipping should have a state', () => {
+    const instance = wrapper.instance();
+    expect(instance.state).toBeDefined();
+  });
 
   it('Shipping should register a click', () => {
     // const onSubmitForm = jest.fn();
@@ -99,7 +99,9 @@ describe('Component: App', () => {
     const wrapper = mount(<Shipping />);
 
     wrapper.find('input').simulate('change', {
-      target: {value: 'India'}
+      target: {
+        value: 'India'
+      }
     });
 
     expect(wrapper).toMatchSnapshot();

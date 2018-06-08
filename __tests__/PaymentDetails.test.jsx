@@ -4,25 +4,24 @@ import Adapter from 'enzyme-adapter-react-16';
 import { configure } from 'enzyme';
 import { createSerializer } from 'enzyme-to-json';
 
-import App from '../client/component/App';
-import Shipping from '../client/component/Shipping';
+import PaymentDetails from '../client/component/tables/PaymentDetailsTable';
 
 expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));
 
 configure({ adapter: new Adapter() });
 
-describe('Component: App', () => {
-  const wrapper = shallow(<App />);
+describe('Component: PaymentDetailsTable', () => {
+  const wrapper = shallow(<PaymentDetails />);
 
-  it('App should be defined', () => {
+  it('PaymentDetailsTable should be defined', () => {
     expect(wrapper).toBeDefined();
   });
 
-  it('App should render correctly', () => {
+  it('PaymentDetailsTable should render correctly', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('App should have the shipping component', () => {
-    expect(wrapper.contains(<Shipping />)).toEqual(true);
+  it('PaymentDetailsTable should render table', () => {
+    expect(wrapper.find('table').length).toBe(1);
   });
 });
