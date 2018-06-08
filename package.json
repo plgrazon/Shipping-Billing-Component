@@ -38,6 +38,7 @@
   },
   "scripts": {
     "test": "jest",
+    "test:watch": "jest --watchAll",
     "start": "nodemon server",
     "build": "webpack -w",
     "build:db": "nodemon db/config"

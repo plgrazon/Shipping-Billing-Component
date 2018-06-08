@@ -9,8 +9,8 @@ import ReturnPolicyTable from './tables/ReturnPolicyTable.jsx';
 import PaymentDetails from './tables/PaymentDetailsTable.jsx';
 
 class Shipping extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     const countries = seeds.map(item => item.country);
 
