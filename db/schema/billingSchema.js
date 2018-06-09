@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 
 const { db } = require('../config');
 
-const { seeds } = require('../sql/seed');
+const { zips, seeds } = require('../sql/seed');
 
 const BillingRate = db.define('billing_rate', {
   country: Sequelize.STRING,
@@ -11,16 +11,32 @@ const BillingRate = db.define('billing_rate', {
   one_day_rate: Sequelize.INTEGER
 });
 
+const ZipCode = db.define('zip_code', {
+  zip: Sequelize.INTEGER,
+  city: Sequelize.STRING,
+  state: Sequelize.STRING
+});
+
 BillingRate.sync({force: true})
   .then(() => {
     BillingRate.bulkCreate(seeds);
-    console.log('tables created');
+    console.log('table created for billingrate');
   })
   .catch(err => {
     console.log('error connecting to database ', err);
+  });
+
+ZipCode.sync({force: true})
+  .then(() => {
+    ZipCode.bulkCreate(zips);
+    console.log('table created for zipcode');
   })
+  .catch(err => {
+    console.log('error connecting to database');
+  });
 
 
 module.exports = {
-  BillingRate: BillingRate
-}
+  BillingRate: BillingRate,
+  ZipCode: ZipCode
+};
