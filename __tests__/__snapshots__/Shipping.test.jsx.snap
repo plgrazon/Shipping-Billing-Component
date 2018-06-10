@@ -35,7 +35,7 @@ exports[`Component: App Shipping should register submit 1`] = `
         Change Country: 
         <select
           onChange={[Function]}
-          value="United States of America"
+          value="India"
         >
           <option
             key="0"
@@ -1015,6 +1015,9 @@ exports[`Component: App Shipping should register submit 1`] = `
         </select>
       </label>
        
+      <label>
+        Zip Code: 
+      </label>
       <button>
         Get Rates
       </button>
@@ -2227,6 +2230,12 @@ exports[`Component: App Shipping should render correctly 1`] = `
         </select>
       </label>
        
+      <label>
+        Zip Code: 
+        <input
+          onChange={[Function]}
+        />
+      </label>
       <button>
         Get Rates
       </button>

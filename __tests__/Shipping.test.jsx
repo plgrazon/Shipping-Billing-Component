@@ -98,7 +98,7 @@ describe('Component: App', () => {
   it('Shipping should register submit', () => {
     const wrapper = mount(<Shipping />);
 
-    wrapper.find('input').simulate('change', {
+    wrapper.find('select').simulate('change', {
       target: {
         value: 'India'
       }
