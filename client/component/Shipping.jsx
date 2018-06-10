@@ -41,7 +41,8 @@ class Shipping extends React.Component {
       method: 'get',
       url: 'api/shipping',
       params: {
-        country: this.state.defaultCountry
+        country: this.state.defaultCountry,
+        zipcode: '08561'
       }
     })
     .then(({ data }) => {
@@ -65,7 +66,8 @@ class Shipping extends React.Component {
         method: 'get',
         url: 'api/shipping',
         params: {
-          country: this.state.selectedCountry
+          country: this.state.selectedCountry,
+          zipcode: this.state.zipcode
         }
       })
       .then(({ data }) => {
@@ -90,7 +92,10 @@ class Shipping extends React.Component {
 
   handleZipCodeInput(event) {
     event.preventDefault();
-    console.log(event.target.value);
+
+    this.setState({
+      zipcode: event.target.value
+    });
   }
 
   /*
@@ -156,7 +161,12 @@ class Shipping extends React.Component {
             </label>{" "}
             <label>{ "Zip Code: " }
               {
-                getZip ? <input onChange={this.handleZipCodeInput}></input> : null
+                getZip ?
+                  <input
+                    type="number"
+                    onChange={this.handleZipCodeInput}
+                    required
+                  ></input> : null
               }
             </label>
             <button>Get Rates</button>

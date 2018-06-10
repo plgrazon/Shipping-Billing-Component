@@ -2234,6 +2234,8 @@ exports[`Component: App Shipping should render correctly 1`] = `
         Zip Code: 
         <input
           onChange={[Function]}
+          required={true}
+          type="number"
         />
       </label>
       <button>
