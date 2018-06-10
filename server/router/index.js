@@ -8,4 +8,4 @@ router.route('/shipping')
 
 module.exports = {
   router: router
-}
+};

@@ -17,11 +17,11 @@ const billingShippingCtrl = {
     });
   },
   post: function(req, res) {
-    console.log('what is req.body in post method? ', req.body);
+    console.log('testing post');
     res.send('posted');
   }
 }
 
 module.exports = {
   billingShippingCtrl: billingShippingCtrl
-}
+};

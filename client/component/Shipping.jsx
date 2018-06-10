@@ -21,12 +21,14 @@ class Shipping extends React.Component {
       basicRate: '',
       expeditedRate: '',
       oneDayRate: '',
-      quantity: 1
+      quantity: 1,
+      zipcode: null
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
-    // not implemented yet:
+    this.handleZipCodeInput = this.handleZipCodeInput.bind(this);
+    // not implemented yet the auction page isn't implenting this on the page:
     // this.handleChangeInQty = this.handleChangeInQty.bind(this);
   }
 
@@ -58,7 +60,6 @@ class Shipping extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-
     if (this.state.selectedCountry) {
       axios({
         method: 'get',
@@ -87,8 +88,14 @@ class Shipping extends React.Component {
     }, () => console.log(this.state.selectedCountry));
   }
 
-  //not implemented on the actual ebay site
+  handleZipCodeInput(event) {
+    event.preventDefault();
+    console.log(event.target.value);
+  }
+
   /*
+  not implemented on the actual ebay site
+
   handleChangeInQty(event) {
     console.log(event.target.value);
     let expeditedFee = this.state.quantity * 3;
@@ -104,9 +111,18 @@ class Shipping extends React.Component {
       });
     }
   }
-  *///////////////////////////////////////////
+  */
 
   render() {
+    let selectedCountry = this.state.selectedCountry;
+    let getZip;
+
+    if (selectedCountry === 'United States of America' || !selectedCountry) {
+      getZip = true;
+    } else {
+      getZip = null;
+    }
+
     return(
       <div>
         <div className={styles['shipping-outside-border']}>
@@ -137,8 +153,13 @@ class Shipping extends React.Component {
                   ))
                 }
               </select>
+            </label>{" "}
+            <label>{ "Zip Code: " }
+              {
+                getZip ? <input onChange={this.handleZipCodeInput}></input> : null
+              }
             </label>
-            {" "}<button>Get Rates</button>
+            <button>Get Rates</button>
           </form>
           <br></br>
           <div>
