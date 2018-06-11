@@ -40,6 +40,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
     "start": "nodemon server",
     "build": "webpack -w",
     "build:db": "nodemon db/config"
