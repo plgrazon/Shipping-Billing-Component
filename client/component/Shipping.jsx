@@ -16,13 +16,13 @@ class Shipping extends React.Component {
 
     this.state = {
       defaultCountry: 'United States of America',
-      selectedCountry: '',
+      selectedCountry: 'United States of America',
       countries: [...countries],
       basicRate: '',
       expeditedRate: '',
       oneDayRate: '',
       quantity: 1,
-      zipcode: null
+      zipcode: ''
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -184,19 +184,19 @@ class Shipping extends React.Component {
               </thead>
               <tbody>
                 <tr>
-                  <td>{`US $${this.state.basicRate}.00`}</td>
+                  <td>{`US $${this.state.basicRate}`}</td>
                   <td>free</td>
                   <td>{this.state.defaultCountry}</td>
                   <td>Standard Shipping</td>
                 </tr>
                 <tr>
-                  <td>{`US $${this.state.expeditedRate}.00`}</td>
+                  <td>{`US $${this.state.expeditedRate}`}</td>
                   <td>3</td>
                   <td>{this.state.defaultCountry}</td>
                   <td>Expedited Shipping</td>
                 </tr>
                 <tr>
-                  <td>{`US $${this.state.oneDayRate}.00`}</td>
+                  <td>{`US $${this.state.oneDayRate}`}</td>
                   <td>5</td>
                   <td>{this.state.defaultCountry}</td>
                   <td>{`One-day Shipping`}</td>

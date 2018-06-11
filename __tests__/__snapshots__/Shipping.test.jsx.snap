@@ -1044,7 +1044,7 @@ exports[`Component: App Shipping should register submit 1`] = `
         <tbody>
           <tr>
             <td>
-              US $.00
+              US $
             </td>
             <td>
               free
@@ -1058,7 +1058,7 @@ exports[`Component: App Shipping should register submit 1`] = `
           </tr>
           <tr>
             <td>
-              US $.00
+              US $
             </td>
             <td>
               3
@@ -1072,7 +1072,7 @@ exports[`Component: App Shipping should register submit 1`] = `
           </tr>
           <tr>
             <td>
-              US $.00
+              US $
             </td>
             <td>
               5
@@ -2264,7 +2264,7 @@ exports[`Component: App Shipping should render correctly 1`] = `
         <tbody>
           <tr>
             <td>
-              US $.00
+              US $
             </td>
             <td>
               free
@@ -2278,7 +2278,7 @@ exports[`Component: App Shipping should render correctly 1`] = `
           </tr>
           <tr>
             <td>
-              US $.00
+              US $
             </td>
             <td>
               3
@@ -2292,7 +2292,7 @@ exports[`Component: App Shipping should render correctly 1`] = `
           </tr>
           <tr>
             <td>
-              US $.00
+              US $
             </td>
             <td>
               5
