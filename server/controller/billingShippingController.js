@@ -54,7 +54,6 @@ const billingShippingCtrl = {
             data.dataValues.one_day_rate = String(oneDayRate + 4) + '.00';
             console.log('west coast ');
           }
-          console.log(data);
           res.status(201).send(data);
         })
         .catch(err => {
@@ -65,20 +64,21 @@ const billingShippingCtrl = {
       .catch(err => {
         console.log(err);
       });
+    } else {
+      BillingRate.findOne({
+        where: {
+          country: req.query.country
+        }
+      })
+      .then(data => {
+        console.log('data fetched');
+        res.status(201).send(data);
+      })
+      .catch(err => {
+        console.log('error getting data ', err);
+        res.status(401);
+      });
     }
-  //   BillingRate.findOne({
-  //     where: {
-  //       country: req.query.country
-  //     }
-  //   })
-  //   .then(data => {
-  //     console.log('data fetched');
-  //     res.status(201).send(data);
-  //   })
-  //   .catch(err => {
-  //     console.log('error getting data ', err);
-  //     res.status(401);
-  //   });
   },
   post: function(req, res) {
     console.log('testing post');
