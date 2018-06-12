@@ -36,7 +36,7 @@ ShallowWrapper {
             <tr>
               <td>
                 <img
-                  src="test-file-stub"
+                  src="https://s3.us-east-2.amazonaws.com/shippingbillingcomponent/paypalOptions.jpeg"
                 />
               </td>
               <td>
@@ -81,7 +81,7 @@ ShallowWrapper {
               <tr>
                 <td>
                   <img
-                    src="test-file-stub"
+                    src="https://s3.us-east-2.amazonaws.com/shippingbillingcomponent/paypalOptions.jpeg"
                   />
                 </td>
                 <td>
@@ -161,7 +161,7 @@ ShallowWrapper {
               "children": <tr>
                 <td>
                   <img
-                    src="test-file-stub"
+                    src="https://s3.us-east-2.amazonaws.com/shippingbillingcomponent/paypalOptions.jpeg"
                   />
                 </td>
                 <td>
@@ -178,7 +178,7 @@ ShallowWrapper {
                 "children": Array [
                   <td>
                     <img
-                      src="test-file-stub"
+                      src="https://s3.us-east-2.amazonaws.com/shippingbillingcomponent/paypalOptions.jpeg"
                     />
                   </td>,
                   <td>
@@ -194,7 +194,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": <img
-                      src="test-file-stub"
+                      src="https://s3.us-east-2.amazonaws.com/shippingbillingcomponent/paypalOptions.jpeg"
                     />,
                   },
                   "ref": null,
@@ -203,7 +203,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "src": "test-file-stub",
+                      "src": "https://s3.us-east-2.amazonaws.com/shippingbillingcomponent/paypalOptions.jpeg",
                     },
                     "ref": null,
                     "rendered": null,
@@ -258,7 +258,7 @@ ShallowWrapper {
               <tr>
                 <td>
                   <img
-                    src="test-file-stub"
+                    src="https://s3.us-east-2.amazonaws.com/shippingbillingcomponent/paypalOptions.jpeg"
                   />
                 </td>
                 <td>
@@ -303,7 +303,7 @@ ShallowWrapper {
                 <tr>
                   <td>
                     <img
-                      src="test-file-stub"
+                      src="https://s3.us-east-2.amazonaws.com/shippingbillingcomponent/paypalOptions.jpeg"
                     />
                   </td>
                   <td>
@@ -383,7 +383,7 @@ ShallowWrapper {
                 "children": <tr>
                   <td>
                     <img
-                      src="test-file-stub"
+                      src="https://s3.us-east-2.amazonaws.com/shippingbillingcomponent/paypalOptions.jpeg"
                     />
                   </td>
                   <td>
@@ -400,7 +400,7 @@ ShallowWrapper {
                   "children": Array [
                     <td>
                       <img
-                        src="test-file-stub"
+                        src="https://s3.us-east-2.amazonaws.com/shippingbillingcomponent/paypalOptions.jpeg"
                       />
                     </td>,
                     <td>
@@ -416,7 +416,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": <img
-                        src="test-file-stub"
+                        src="https://s3.us-east-2.amazonaws.com/shippingbillingcomponent/paypalOptions.jpeg"
                       />,
                     },
                     "ref": null,
@@ -425,7 +425,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "src": "test-file-stub",
+                        "src": "https://s3.us-east-2.amazonaws.com/shippingbillingcomponent/paypalOptions.jpeg",
                       },
                       "ref": null,
                       "rendered": null,

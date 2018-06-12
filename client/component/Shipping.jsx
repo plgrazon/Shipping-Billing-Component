@@ -39,7 +39,7 @@ class Shipping extends React.Component {
   handleDefault() {
     axios({
       method: 'get',
-      url: 'api/shipping',
+      url: 'http://localhost:8565/api/shipping',
       params: {
         country: this.state.defaultCountry,
         zipcode: '08561'
@@ -64,7 +64,7 @@ class Shipping extends React.Component {
     if (this.state.selectedCountry) {
       axios({
         method: 'get',
-        url: 'api/shipping',
+        url: 'http://localhost:8565/api/shipping',
         params: {
           country: this.state.selectedCountry,
           zipcode: this.state.zipcode

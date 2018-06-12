@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './PaymentDetails.css';
 
-import paymentMethods from '../../../static/paypalOptions.jpeg';
-
 const PaymentDetails = () => (
   <div className={styles['payment-outside-border']}>
     <h3>Payment details</h3>
@@ -15,7 +13,7 @@ const PaymentDetails = () => (
       </thead>
       <tbody>
         <tr>
-          <td><img src={paymentMethods}/></td>
+          <td><img src="https://s3.us-east-2.amazonaws.com/shippingbillingcomponent/paypalOptions.jpeg"/></td>
           <td>PayPal Preferred</td>
         </tr>
       </tbody>
