@@ -1,8 +1,11 @@
 const express = require('express');
 const path = require('path');
 const parser = require('body-parser');
+const helmet = require('helmet');
 
 const app = express();
+app.use(helmet());
+
 const PORT = 8565;
 
 const { router } = require('./router');
