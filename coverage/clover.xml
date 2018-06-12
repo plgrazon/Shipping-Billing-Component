@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1528758526458" clover="3.2.0">
-  <project timestamp="1528758526458" name="All files">
-    <metrics statements="35" coveredstatements="30" conditionals="10" coveredconditionals="8" methods="18" coveredmethods="15" elements="63" coveredelements="53" complexity="0" loc="35" ncloc="35" packages="3" files="5" classes="5">
-      <package name="client.component">
+<coverage generated="1528768854014" clover="3.2.0">
+  <project timestamp="1528768854014" name="All files">
+    <metrics statements="41" coveredstatements="36" conditionals="10" coveredconditionals="8" methods="18" coveredmethods="15" elements="69" coveredelements="59" complexity="0" loc="41" ncloc="41" packages="4" files="6" classes="6">
+      <package name="FrontEndCapstone">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="setupTests.js" path="/Users/biosync/Desktop/FrontEndCapstone/setupTests.js">
+          <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="14" count="4" type="stmt"/>
+          <line num="17" count="4" type="stmt"/>
+          <line num="18" count="4" type="stmt"/>
+          <line num="19" count="4" type="stmt"/>
+          <line num="20" count="4" type="stmt"/>
+          <line num="21" count="4" type="stmt"/>
+        </file>
+      </package>
+      <package name="FrontEndCapstone.client.component">
         <metrics statements="29" coveredstatements="24" conditionals="10" coveredconditionals="8" methods="16" coveredmethods="13"/>
         <file name="App.jsx" path="/Users/biosync/Desktop/FrontEndCapstone/client/component/App.jsx">
           <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -40,20 +52,20 @@
           <line num="157" count="783" type="stmt"/>
         </file>
       </package>
-      <package name="client.component.tables">
+      <package name="FrontEndCapstone.client.component.tables">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <file name="PaymentDetailsTable.jsx" path="/Users/biosync/Desktop/FrontEndCapstone/client/component/tables/PaymentDetailsTable.jsx">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="6" count="3" type="stmt"/>
-          <line num="7" count="4" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
         </file>
         <file name="ReturnPolicyTable.jsx" path="/Users/biosync/Desktop/FrontEndCapstone/client/component/tables/ReturnPolicyTable.jsx">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="5" count="3" type="stmt"/>
-          <line num="6" count="4" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
         </file>
       </package>
-      <package name="db.sql">
+      <package name="FrontEndCapstone.db.sql">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="seed.js" path="/Users/biosync/Desktop/FrontEndCapstone/db/sql/seed.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>

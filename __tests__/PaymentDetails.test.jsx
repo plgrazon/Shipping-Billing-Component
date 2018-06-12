@@ -1,14 +1,4 @@
-import React from 'react';
-import Enzyme, {shallow, mount, render} from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import { configure } from 'enzyme';
-import { createSerializer } from 'enzyme-to-json';
-
 import PaymentDetails from '../client/component/tables/PaymentDetailsTable';
-
-expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));
-
-configure({ adapter: new Adapter() });
 
 describe('Component: PaymentDetailsTable', () => {
   const wrapper = shallow(<PaymentDetails />);

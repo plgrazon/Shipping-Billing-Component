@@ -1,20 +1,13 @@
-import React from 'react';
-import Enzyme, {shallow, mount, render} from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import { configure } from 'enzyme';
-import { createSerializer } from 'enzyme-to-json';
-
-import sinon from 'sinon';
-
 import styles from '../client/component/Shipping.css';
 
 import Shipping from '../client/component/Shipping';
 import ReturnPolicyTable from '../client/component/tables/ReturnPolicyTable';
 import PaymentDetails from '../client/component/tables/PaymentDetailsTable';
 
-expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));
+// Use this if you only want to use the serialiazer into one test file only
+// expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));
 
-configure({ adapter: new Adapter() });
+// configure({ adapter: new Adapter() });
 
 ////////////////////////////////////////////////////////////////////////////////
 // test starts here: ///////////////////////////////////////////////////////////
@@ -69,34 +62,19 @@ describe('Component: App', () => {
   });
 
   it('Shipping should register a click', () => {
-    // const onSubmitForm = jest.fn();
     const preventDefault = jest.fn();
     const wrapper = mount(<Shipping />);
     const instance = wrapper.instance();
-
-    // wrapper.setState({selectedCountry: 'India'});
-    // const input = wrapper.find('input');
-    // const form = wrapper.find('form');
-    // input.simulate('change', {target: {value: 'India'}});
-    // form.simulate('submit', onSubmitForm);
-    // wrapper
-    //   .find('input')
-    //   .simulate('change', {
-    //     target: {
-    //       value: 'India'
-    //     }
-    //   });
 
     wrapper
       .find('form')
       .simulate('submit', { preventDefault });
 
     expect(preventDefault).toBeCalled();
-    // expect(preventDefault).toBeCalledWith('India');
   });
 
   it('Shipping should register submit', () => {
-    const wrapper = mount(<Shipping />);
+    const wrapper = shallow(<Shipping />);
 
     wrapper.find('select').simulate('change', {
       target: {
