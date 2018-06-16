@@ -29,6 +29,8 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.4",
     "file-loader": "^1.1.11",
+    "grunt": "^1.0.3",
+    "grunt-aws": "^0.6.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.1.0",
     "nodemon": "^1.17.5",

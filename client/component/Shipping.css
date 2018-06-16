@@ -6,24 +6,24 @@ Forms:
 }
 
 :local(label) {
-  font-size: 18px;
+  font-size: 13px;
   font-family: helvetica, arial, sans-serif;
 }
 
 :local(select) {
-  font-size: 18px;
+  font-size: 13px;
   font-family: helvetica, arial, sans-serif;
 }
 
 :local(input) {
-  font-size: 18px;
+  font-size: 13px;
   font-family: helvetica, arial, sans-serif;
 }
 
 :local(button) {
   border-radius: 4px;
   color: blue;
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 600;
 }
 
@@ -33,7 +33,7 @@ Text/Paragraphs:
 
 :local(.shipping-conditions) {
   font-family: helvetica, arial, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   text-align: left;
   padding-bottom: 15px;
   padding-left: 13px;
@@ -82,19 +82,21 @@ Tables:
 }
 
 :local(h3) {
-  font-size: 20px;
+  font-size: 16px;
   font-family: helvetica, arial, sans-serif;
   padding: 10px;
   padding-left: 15px;
 }
 
 :local(th) {
+  font-size: 14px;
   padding: 10px;
   height: 40px;
   text-align: left;
 }
 
 :local(td) {
+  font-size: 13px;
   padding: 10px;
   height: 30px;
   text-align: left;
