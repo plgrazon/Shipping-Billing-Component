@@ -203,6 +203,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
+                      "className": undefined,
                       "src": "https://s3.us-east-2.amazonaws.com/shippingbillingcomponent/paypalOptions.jpeg",
                     },
                     "ref": null,
@@ -425,6 +426,7 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
+                        "className": undefined,
                         "src": "https://s3.us-east-2.amazonaws.com/shippingbillingcomponent/paypalOptions.jpeg",
                       },
                       "ref": null,
