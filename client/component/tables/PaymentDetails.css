@@ -18,17 +18,17 @@
   background-color: #e8eaed;
 }
 
-th {
+:local(th) {
   height: 40px;
   text-align: left;
 }
 
-td {
+:local(td) {
   height: 30px;
   text-align: left;
 }
 
-img {
+:local(.paypal) {
   max-width: 100%;
   height: 50px;
 }

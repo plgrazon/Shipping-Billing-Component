@@ -39,7 +39,7 @@ class Shipping extends React.Component {
   handleDefault() {
     axios({
       method: 'get',
-      url: 'http://ec2-54-219-159-112.us-west-1.compute.amazonaws.com:8565/api/shipping',
+      url: 'http://ec2-54-241-153-94.us-west-1.compute.amazonaws.com:8565/api/shipping',
       params: {
         country: this.state.defaultCountry,
         zipcode: '08561'
@@ -64,7 +64,7 @@ class Shipping extends React.Component {
     if (this.state.selectedCountry) {
       axios({
         method: 'get',
-        url: 'http://ec2-54-219-159-112.us-west-1.compute.amazonaws.com:8565/api/shipping',
+        url: 'http://ec2-54-241-153-94.us-west-1.compute.amazonaws.com:8565/api/shipping',
         params: {
           country: this.state.selectedCountry,
           zipcode: this.state.zipcode
